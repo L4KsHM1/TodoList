@@ -8,5 +8,10 @@
     padding: 10px;
     border-bottom: 2px solid;
     outline: none;
-
+}
+.create_form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
