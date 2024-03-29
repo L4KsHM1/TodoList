@@ -6,6 +6,11 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+mongoose.connect('mongodb://localhost:27017/test')
+
+app.post('/add',(req,res =>{
+    const task = req.body.task;
+}))
 app.listen(3001,()=>{
     console.log("server is running")
 })
