@@ -17,8 +17,8 @@ h1{
     outline: none;
     color: white;
     margin-bottom: 1.5rem;
-    border-radius: 1rem;
-    margin-right: 5px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 ::placeholder {
     color: #ffb17a;
@@ -30,17 +30,16 @@ h1{
     color: #2d3250;
     cursor: pointer;
     border:solid #ffb17a ;
-    border-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 
 }
 .task_list{
-    width: 300px;
+    width: 345px;
     padding: 10px;
     border: 1px solid #5c3d2e;
     margin-bottom: .5rem;
-    /* background-color: #42476f; */
     background-color: #ffb17a;
-    /* color: #f8f0df; */
     color: #2d3250;
     border-radius: 1rem;
 }
