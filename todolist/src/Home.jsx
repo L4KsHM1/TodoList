@@ -12,12 +12,17 @@ function Home(){
     },[])
 
     const handleEdit = (id)=>{
-        axios.put('http://localhost:3001/update/'+id)
-        .then(result => {
-            location.reload()
-        })
-        .catch(err => console.log(err))
-    }
+        const updatedTodos = todos.map(todo =>{
+            if (todo._id ===id){
+                const updatedTodo= {...todo, done:!todo.done};
+                axios.put('http://localhost:3001/update/'+id,updatedTodo)
+                .catch(err => console.log(err))
+                return updatedTodo;
+
+ }
+        return todo;
+    });
+    setTodos(updatedTodos)};
 
     const handleDelete = (id) =>{
         axios.delete('http://localhost:3001/delete/'+id)
