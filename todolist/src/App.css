@@ -1,7 +1,7 @@
 body{
     background-color: #2d3250;
 }
-h1{
+h1,h2{
     color: #ffb17a;
 }
 .home{
@@ -50,6 +50,9 @@ h1{
 .checkbox{
     display: flex;
     align-items: center;
+}
+.line_through{
+    text-decoration:line-through;
 }
 .checkbox .icon{
     margin-right: 5px;
